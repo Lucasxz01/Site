@@ -87,7 +87,7 @@
 
         /* Banner principal */
         .hero {
-            background-color: #c5aa86;
+            background:linear-gradient(135deg,#d3cabf,#ca8b39);
             color: white;
             padding: 4rem 2rem;
             text-align: center;
