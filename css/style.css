@@ -33,11 +33,11 @@
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #2c3e50;
+            color: #2a2218;
         }
 
         .logo span {
-            color: #3498db;
+            color: #e4b374;
         }
 
         nav ul {
@@ -57,7 +57,7 @@
         }
 
         nav ul li a:hover {
-            color: #3498db;
+            color: #c5aa86;
         }
 
         .cart-icon {
@@ -65,11 +65,16 @@
             cursor: pointer;
         }
 
+        .cart-icon:hover {
+          color: #c5aa86;
+
+        }
+
         .cart-count {
             position: absolute;
             top: -8px;
             right: -8px;
-            background-color: #e74c3c;
+            background-color: #e38820;
             color: white;
             border-radius: 50%;
             width: 18px;
@@ -82,7 +87,7 @@
 
         /* Banner principal */
         .hero {
-            background-color: #3498db;
+            background-color: #c5aa86;
             color: white;
             padding: 4rem 2rem;
             text-align: center;
@@ -102,7 +107,7 @@
         .btn {
             display: inline-block;
             background-color: #fff;
-            color: #3498db;
+            color: #c5aa86;
             padding: 0.8rem 1.5rem;
             border-radius: 4px;
             text-decoration: none;
@@ -126,7 +131,7 @@
             text-align: center;
             margin-bottom: 2rem;
             font-size: 2rem;
-            color: #2c3e50;
+            color: #c5aa86;
         }
 
         .products-grid {
@@ -136,7 +141,7 @@
         }
 
         .product-card {
-            background-color: white;
+            background-color: #f1ede9;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -167,14 +172,14 @@
         .product-price {
             font-size: 1.3rem;
             font-weight: 700;
-            color: #3498db;
+            color: #c5aa86;
             margin-bottom: 1rem;
         }
 
         .add-to-cart {
             width: 100%;
             padding: 0.7rem;
-            background-color: #3498db;
+            background-color: #c5aa86;
             color: white;
             border: none;
             border-radius: 4px;
@@ -184,7 +189,7 @@
         }
 
         .add-to-cart:hover {
-            background-color: #2980b9;
+            background-color: #c5aa86;
         }
 
         /* Carrinho lateral */
@@ -252,7 +257,7 @@
         }
 
         .cart-item-price {
-            color: #3498db;
+            color: #c5aa86;
             font-weight: 600;
         }
 
@@ -305,7 +310,7 @@
 
         /* Rodapé */
         footer {
-            background-color: #2c3e50;
+            background-color: #e1b173;
             color: white;
             padding: 3rem 2rem;
             text-align: center;
