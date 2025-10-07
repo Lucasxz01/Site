@@ -98,6 +98,12 @@
             align-items: center;
         }
 
+.formulario{
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 12px;
+}
+
         /* Banner principal */
         .hero {
             background:linear-gradient(135deg,#d3cabf,#ca8b39);
