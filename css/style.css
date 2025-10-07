@@ -97,11 +97,41 @@
             justify-content: center;
             align-items: center;
         }
-
+/*quadrado*/
 .formulario{
     text-align: center;
     background-color: #ddd;
     border-radius: 12px;
+    width:40%;
+    padding: 20px 30px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+/*borda*/
+.formulario input{
+    background-color: #ddd;
+
+    margin: 0 auto;
+
+    font-size: 19px;
+}
+/*letras*/
+.formulario label{
+    display: block;
+    border-radius: 7px;
+    margin: 3%;
+    padding: 1px;
+    width: 35%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+
+    
+}
+/*botão*/
+.formulario button{
+    font-size: 23px;
+    border-radius:6px;
+    padding: 5px 5px;
 }
 
         /* Banner principal */
