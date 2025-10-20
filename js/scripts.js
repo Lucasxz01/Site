@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Renderizar produtos
 function renderProducts() {
-    productsGrid.innerHTML = '';
+  productsGrid.innerHTML = '';
 
     products.forEach(product => {
         const productCard = document.createElement('div');
@@ -109,7 +109,8 @@ function renderProducts() {
                 <button class="add-to-cart" data-id="${product.id}">Adicionar ao Carrinho</button>
             </div>
         `;
-        productsGrid.appendChild(productCard);
+    productsGrid.appendChild(productCard);
+
     });
 
     // Adicionar event listeners aos botões
@@ -237,4 +238,4 @@ closeCart.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
     cartSidebar.classList.remove('active');
     overlay.classList.remove('active');
-});
+})

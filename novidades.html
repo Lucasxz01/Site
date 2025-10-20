@@ -57,12 +57,57 @@
            <label>Telefone</label>
            <input type="tel" id="telefone" placeholder="Seu telefone aqui">
            <br><br><hr><br>
-           <button>Cadastrar</button>
+           <button class="btn"><a href="index.html">Cadastrar</button></a>
         </form>
     </div>
-    </section>
-    <section id="contato" class="products">
-    </section>
+    <br>
+    
+    <div class="formulario">
+    
+    <form>
+        <h2 class="section-title">Cadastro de Endereço</h2>
+        <label for="cep">Digite o CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="Ex: 12345-678"><br>
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" name="logradouro"> <br>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro"><br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade"> <br>
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado"><br><br><hr><br>
+        <button class="btn"><a href="index.html">Cadastrar</button></a>
+    </form>
+
+    </div>
+</section>
+    <script>
+        // 1. Selecionar o elemento pelo ID
+        var campoCep = document.getElementById('cep');
+        // 2. Adicionar o event listener para o evento 'blur'(executado quando é retirado o mouse)
+        campoCep.addEventListener('blur', function () {
+            let valorCep = campoCep.value; // pegar o valor do campoCep
+            fetch("https://viacep.com.br/ws/" + valorCep + "/json/")
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('logradouro').value = data.logradouro
+                    document.getElementById('bairro').value = data.bairro
+                    document.getElementById('cidade').value = data.localidade
+                    document.getElementById('estado').value = data.estado
+                    console.log(data);
+                    mudaBorda(2)
+                })
+                .catch(error => mudaBorda(1));
+        });
+        function mudaBorda(cor){
+            if(cor == 1){
+                campoCep.style.border = "4px solid red";
+            }else{
+                campoCep.style.border = "4px solid green";
+            }
+        }
+        
+        </script>
     <!-- Rodapé -->
     <footer>
         <div class="footer-content">

@@ -129,11 +129,36 @@
 }
 /*botão*/
 .formulario button{
-    font-size: 23px;
-    border-radius:6px;
-    padding: 5px 5px;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #0f0f0f;
+    border: 1px #0f0f0f solid;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.formulario h2{
+    color:black
 }
 
+.cadastroLeft{
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 12px;
+    width:40%;
+    padding: 20px 30px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.cadastroRight{
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 12px;
+    width:40%;
+    padding: 20px 30px;
+    margin: 0 auto;
+    font-size: 18px;
+}
         /* Banner principal */
         .hero {
             background:linear-gradient(135deg,#d3cabf,#ca8b39);
